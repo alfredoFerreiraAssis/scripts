@@ -6,6 +6,8 @@
 # Script para configurações e downloads #
 #                                       #
 # *run as root*                         #
+# su                                    #
+# ./conf.sh                             #
 #                                       #
 #########################################
 
@@ -39,6 +41,9 @@ gzip -d rockyou.txt.gz;
 cd ~;
 # autalizar pip 
 pip3 install --upgrade pip;
+
+#gem install
+gem install winrm winrm-fs colorize;
 
 #add socks5 proxychains
 echo "socks5 127.0.0.1 9050" >> /etc/proxychains.conf;
