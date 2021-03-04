@@ -35,6 +35,34 @@ wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/
 #login fuzz
 wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/Logins.fuzz.txt;
 
+#quick sqli
+wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Fuzzing/SQLi/quick-SQLi.txt;
+
+#generic sqli
+https://raw.githubusercontent.com/danielmiessler/SecLists/master/Fuzzing/SQLi/Generic-SQLi.txt;
+
+#blind sqli
+wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Fuzzing/SQLi/Generic-BlindSQLi.fuzzdb.txt;
+
+#sqli auth bypass
+wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Fuzzing/Databases/sqli.auth.bypass.txt;
+
+#dates
+wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Miscellaneous/security-question-answers/dates.txt;
+
+#palavras em português
+wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Miscellaneous/lang-portuguese.txt;
+
+#backdoor
+wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Web-Shells/backdoor_list.txt;
+
+#windows writeable locations
+https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/File-System/windows-writable-locations.txt;
+
+#secret keywords
+
+wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Variables/secret-keywords.txt;
+
 #descompactar rockyou
 gzip -d rockyou.txt.gz;
 
@@ -58,7 +86,40 @@ echo -e "set tabstop=4\nset expandtab" >> ~/.vimrc;
 # identação vim usuario
 echo -e "set tabstop=4\nset expandtab" >> /home/$USER/.vimrc;
 
+# download linPEAS and winPEAS
+wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh;
+
+wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/winPEAS/winPEASbat/winPEAS.bat;
+
+# download ffuf
+wget https://github.com/ffuf/ffuf/releases/download/v1.2.1/ffuf_1.2.1_linux_amd64.tar.gz;
+tar -xzf ffuf_1.2.1_linux_amd64.tar.gz;
+rm CHANGELOG.md LICENSE README.md;
+mv ffuf /bin/ffuf;
+chmod +x /bin/ffuf;
+
+#download enum4linux
+git clone https://github.com/CiscoCXSecurity/enum4linux.git /opt/enum4linux;
+
+#download reGeorge
+git clone https://github.com/sensepost/reGeorg.git /opt/reGeorg;
+
+#download pspy
+wget https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy64;
+mv pspy64 /bin/pspy;
+chmod 755 /bin/pspy;
+
+cd /usr/share/windows-binaries;
+#Download nc64
+wget https://github.com/int0x33/nc.exe/raw/master/nc64.exe;
+
+#Download mimikatz
+wget https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20200918-fix/mimikatz_trunk.zip;
+unzip -d mimikatz mimikatz_trunk.zip;
+
+cd ~;
 # limpa cache
 echo 3 > /proc/sys/vm/drop_caches
-sysctl -w vm.drop_caches=3
+sysctl -w vm.drop_caches=3;
 
+clear
