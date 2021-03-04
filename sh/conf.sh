@@ -94,7 +94,7 @@ wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-
 # download ffuf
 wget https://github.com/ffuf/ffuf/releases/download/v1.2.1/ffuf_1.2.1_linux_amd64.tar.gz;
 tar -xzf ffuf_1.2.1_linux_amd64.tar.gz;
-rm CHANGELOG.md LICENSE README.md;
+rm CHANGELOG.md LICENSE README.md ffuf_1.2.1_linux_amd64.tar.gz;
 mv ffuf /bin/ffuf;
 chmod +x /bin/ffuf;
 
