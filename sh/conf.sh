@@ -122,4 +122,8 @@ cd ~;
 echo 3 > /proc/sys/vm/drop_caches
 sysctl -w vm.drop_caches=3;
 
+echo "Settings Accomplished"
+
+sleep 3
+
 clear
