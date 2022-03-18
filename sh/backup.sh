@@ -21,7 +21,7 @@ DAYS7=$(find $DIRDESTINO -ctime -7 -name backup\*tgz) # -ctime 7 busca
 if [ "$DAYS7" ] # testa se avariavel é nula
 then
     echo "Já foi gerado um backup nos últimos 7 dias."
-    echo -n "Deseja continuas? (N/s): "
+    echo -n "Deseja continuar? (N/s): "
     read -n1 CONT
     echo
     if [ "$CONT" = N -o "$CONT" = n -o "$CONT" = "" ]
