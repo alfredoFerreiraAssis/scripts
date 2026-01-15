@@ -1,6 +1,7 @@
 # =============================================
 # Controle de Windows Update - Windows 10 22H2
 # 15/01/2026
+# Alfredo Assis
 # =============================================
 
 # ---- Verifica se está rodando como Administrador ----
@@ -85,10 +86,6 @@ function Mostrar-Status {
         Write-Host "Politica: NAO bloqueado via registro" -ForegroundColor Yellow
     }
 }
-
-# ======================
-# MENU
-# ======================
 
 do {
     Clear-Host
